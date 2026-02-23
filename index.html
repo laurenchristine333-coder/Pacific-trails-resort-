@@ -1,68 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Pacific Trails Resort</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pacific Trails Resort</title>
 
-    <!-- Embedded CSS -->
-    <style>
-        body {
-            background-color: #e6f2ff;
-            font-family: Poppins, sans-serif;
-            margin: 0;
-        }
+  <!-- Embedded CSS -->
+  <style>
+    body {
+      background-color: #e6f2ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #00264d;
+      line-height: 1.6;              /* ✅ line-height for readability */
+    }
 
-        h1 {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+    h1 {
+      background-color: #004080;
+      color: white;
+      text-align: center;            /* ✅ text alignment */
+      padding: 22px;
+      margin: 0;
+      font-size: 2.1rem;             /* ✅ heading font size */
+      letter-spacing: 0.5px;
+    }
 
-        nav {
-            background-color: #cce0ff;
-            padding: 10px;
-            text-align: center;
-        }
+    nav {
+      background-color: #cce0ff;
+      padding: 12px;
+      text-align: center;            /* ✅ text alignment */
+    }
 
-        nav a {
-            margin: 10px;
-            text-decoration: none;
-            color: #004080;
-            font-weight: bold;
-        }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #004080;                /* ✅ text color variation */
+      font-weight: bold;             /* ✅ font-weight */
+    }
 
-        h2 {
-            color: #004080;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        p {
-            padding: 10px;
-        }
-    </style>
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hero-img {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      margin: 10px auto 18px;
+      border-radius: 12px;
+      border: 3px solid #cce0ff;
+    }
+
+    h2 {
+      color: #004080;                /* ✅ text color variation */
+      font-size: 1.6rem;             /* ✅ heading font size */
+      margin: 0 0 10px;
+      text-align: left;              /* ✅ text alignment */
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .tagline {
+      font-style: italic;            /* ✅ font-style */
+      color: #1a4d80;                /* ✅ text color variation */
+      margin-bottom: 14px;
+    }
+  </style>
 </head>
 
 <body>
+  <h1>Pacific Trails Resort</h1>
 
-    <h1>Pacific Trails Resort</h1>
+  <nav>
+    <a href="#">Home</a> |
+    <a href="#">Reservations</a> |
+    <a href="#">Activities</a> |
+    <a href="#">Contact</a>
+  </nav>
 
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Reservations</a> |
-        <a href="#">Activities</a> |
-        <a href="#">Contact</a>
-    </nav>
+  <div class="wrap">
 
-    <hr>
+    <!-- ✅ Part 1: Image added (update src if your file name is different) -->
+    <img class="hero-img"
+         src="images/cabin.jpg"
+         alt="A scenic view of the Pacific Trails Resort lodge near the coast" />
 
     <h2>Welcome to Pacific Trails Resort</h2>
 
+    <p class="tagline">Relax, explore, and enjoy the coast at your own pace.</p>
+
     <p>
-        Pacific Trails Resort offers a peaceful coastal escape surrounded by scenic hiking trails,
-        ocean views, and relaxing accommodations. Guests can enjoy guided nature walks, kayaking,
-        and quiet evenings by the shore. Whether you are seeking adventure or rest, Pacific Trails
-        provides the perfect setting for a memorable getaway.
+      Pacific Trails Resort offers a peaceful coastal escape surrounded by scenic hiking trails,
+      ocean views, and relaxing accommodations. Guests can enjoy guided nature walks, kayaking,
+      and quiet evenings by the shore. Whether you are seeking adventure or rest, Pacific Trails
+      provides the perfect setting for a memorable getaway.
     </p>
 
+  </div>
 </body>
 </html>
