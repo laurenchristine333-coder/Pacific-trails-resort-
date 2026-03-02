@@ -14,6 +14,11 @@
       line-height: 1.7;
     }
 
+    /* Grouped selector */
+    h1, h2 {
+      letter-spacing: 1px;
+    }
+
     h1 {
       background: #2f2a24;
       color: #f6f2ea;
@@ -21,7 +26,6 @@
       padding: 26px 16px;
       margin: 0;
       font-size: 2.2rem;
-      letter-spacing: 1px;
       text-transform: uppercase;
       font-weight: 700;
     }
@@ -38,10 +42,14 @@
       text-decoration: none;
       color: #2f2a24;
       font-weight: 700;
+      padding: 6px 8px; /* small usability boost */
+      border-radius: 6px;
     }
 
+    /* Pseudo-class */
     nav a:hover {
       text-decoration: underline;
+      background: #f6f2ea; /* subtle hover feedback */
     }
 
     hr {
@@ -50,12 +58,14 @@
       margin: 0;
     }
 
-    .wrap {
+    /* ID selector */
+    #content {
       max-width: 900px;
       margin: 0 auto;
       padding: 24px 18px 40px;
     }
 
+    /* Class selectors (already in your code) */
     .hero-img {
       display: block;
       width: 100%;
@@ -96,8 +106,8 @@
 
   <hr>
 
-  <div class="wrap">
-    <!-- Make sure cabin.jpeg is in the same folder as index.html -->
+  <!-- changed from class="wrap" to id="content" to demonstrate ID selector -->
+  <div id="content">
     <img class="hero-img" src="cabin.jpeg" alt="A peaceful lodge at Pacific Trails Resort with coastal scenery">
 
     <h2>Welcome to Pacific Trails Resort</h2>
