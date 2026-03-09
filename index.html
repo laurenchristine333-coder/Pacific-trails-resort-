@@ -19,11 +19,14 @@
       letter-spacing: 1px;
     }
 
-    h1 {
+    header {
       background: #2f2a24;
       color: #f6f2ea;
       text-align: center;
       padding: 26px 16px;
+    }
+
+    h1 {
       margin: 0;
       font-size: 2.2rem;
       text-transform: uppercase;
@@ -42,20 +45,14 @@
       text-decoration: none;
       color: #2f2a24;
       font-weight: 700;
-      padding: 6px 8px; /* small usability boost */
+      padding: 6px 8px;
       border-radius: 6px;
     }
 
     /* Pseudo-class */
     nav a:hover {
       text-decoration: underline;
-      background: #f6f2ea; /* subtle hover feedback */
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #d6cbbd;
-      margin: 0;
+      background: #f6f2ea;
     }
 
     /* ID selector */
@@ -65,7 +62,12 @@
       padding: 24px 18px 40px;
     }
 
-    /* Class selectors (already in your code) */
+    main section {
+      margin-bottom: 24px;
+      padding: 12px 0;
+    }
+
+    /* Class selector */
     .hero-img {
       display: block;
       width: 100%;
@@ -91,34 +93,56 @@
       margin: 0;
       font-size: 1.05rem;
     }
+
+    footer {
+      background: #2f2a24;
+      color: #f6f2ea;
+      text-align: center;
+      padding: 18px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Pacific Trails Resort</h1>
+  <header>
+    <h1>Pacific Trails Resort</h1>
+  </header>
 
   <nav>
-    <a href="#">Home</a> |
-    <a href="#">Reservations</a> |
-    <a href="#">Activities</a> |
+    <a href="#">Home</a>
+    <a href="#">Reservations</a>
+    <a href="#">Activities</a>
     <a href="#">Contact</a>
   </nav>
 
-  <hr>
+  <main id="content">
+    <section>
+      <img class="hero-img" src="cabin.jpeg" alt="A peaceful lodge at Pacific Trails Resort with coastal scenery">
 
-  <!-- changed from class="wrap" to id="content" to demonstrate ID selector -->
-  <div id="content">
-    <img class="hero-img" src="cabin.jpeg" alt="A peaceful lodge at Pacific Trails Resort with coastal scenery">
+      <h2>Welcome to Pacific Trails Resort</h2>
+      <p class="tagline">Quiet luxury, ocean air, and miles of scenic trails.</p>
 
-    <h2>Welcome to Pacific Trails Resort</h2>
-    <p class="tagline">Quiet luxury, ocean air, and miles of scenic trails.</p>
+      <p>
+        Pacific Trails Resort offers a peaceful coastal escape surrounded by scenic hiking trails,
+        ocean views, and relaxing accommodations. Guests can enjoy guided nature walks, kayaking,
+        and quiet evenings by the shore. Whether you are seeking adventure or rest, Pacific Trails
+        provides the perfect setting for a memorable getaway.
+      </p>
+    </section>
 
-    <p>
-      Pacific Trails Resort offers a peaceful coastal escape surrounded by scenic hiking trails,
-      ocean views, and relaxing accommodations. Guests can enjoy guided nature walks, kayaking,
-      and quiet evenings by the shore. Whether you are seeking adventure or rest, Pacific Trails
-      provides the perfect setting for a memorable getaway.
-    </p>
-  </div>
+    <section>
+      <h2>Resort Activities</h2>
+      <p>
+        Explore nearby coastal trails, enjoy kayaking on the water, or relax and take in the beauty
+        of the natural surroundings. Pacific Trails Resort is perfect for guests who love both adventure
+        and peaceful scenery.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pacific Trails Resort | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
