@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,6 +95,34 @@
       font-size: 1.05rem;
     }
 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: #ffffff;
+    }
+
+    caption {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    th, td {
+      border: 1px solid #b8ab9b;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #ded2c3;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f1e9df;
+    }
+
     footer {
       background: #2f2a24;
       color: #f6f2ea;
@@ -138,6 +167,37 @@
         of the natural surroundings. Pacific Trails Resort is perfect for guests who love both adventure
         and peaceful scenery.
       </p>
+    </section>
+
+    <section>
+      <h2>Room Rates</h2>
+      <table>
+        <caption>Pacific Trails Resort room types and nightly rates</caption>
+        <thead>
+          <tr>
+            <th>Room Type</th>
+            <th>Description</th>
+            <th>Nightly Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard Room</td>
+            <td>One queen bed with garden view</td>
+            <td>$149</td>
+          </tr>
+          <tr>
+            <td>Deluxe Room</td>
+            <td>Two queen beds with ocean view</td>
+            <td>$199</td>
+          </tr>
+          <tr>
+            <td>Luxury Suite</td>
+            <td>King bed with private balcony</td>
+            <td>$289</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 
