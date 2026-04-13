@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pacific Trails Resort</title>
+
+  <style>
+    body {
+      background: #f6f2ea;
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      color: #2b2b2b;
+      line-height: 1.7;
+    }
+
+    h1, h2 {
+      letter-spacing: 1px;
+    }
+
+    header {
+      background: #2f2a24;
+      color: #f6f2ea;
+      text-align: center;
+      padding: 26px 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    nav {
+      background: #e7dfd3;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #d6cbbd;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #2f2a24;
+      font-weight: 700;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      background: #f6f2ea;
+      color: #000000;
+    }
+
+    #content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 18px 40px;
+    }
+
+    main section {
+      margin-bottom: 24px;
+      padding: 12px 0;
+    }
+
+    .hero-img {
+      display: block;
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid #d6cbbd;
+      margin: 8px 0 20px;
+    }
+
+    h2 {
+      color: #2f2a24;
+      font-size: 1.6rem;
+      margin: 0 0 10px;
+      text-align: left;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #5a5248;
+      margin: 0 0 14px;
+    }
+
+    p {
+      margin: 0 0 12px 0;
+      font-size: 1.05rem;
+    }
+
+    .media-box {
+      background: #ffffff;
+      border: 1px solid #d6cbbd;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 16px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .book-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      background: #2f2a24;
+      color: #f6f2ea;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .book-btn:hover {
+      background: #5a5248;
+      transform: scale(1.03);
+    }
+
+    .book-btn:focus {
+      outline: 3px solid #b8ab9b;
+      background: #5a5248;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: #ffffff;
+    }
+
+    caption {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    th, td {
+      border: 1px solid #b8ab9b;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #ded2c3;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f1e9df;
+    }
+
+    footer {
+      background: #2f2a24;
+      color: #f6f2ea;
+      text-align: center;
+      padding: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Pacific Trails Resort</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Reservations</a>
+    <a href="#">Activities</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main id="content">
+    <section>
+      <img class="hero-img" src="cabin.jpeg" alt="A peaceful lodge at Pacific Trails Resort with coastal scenery">
+
+      <h2>Welcome to Pacific Trails Resort</h2>
+      <p class="tagline">Quiet luxury, ocean air, and miles of scenic trails.</p>
+
+      <p>
+        Pacific Trails Resort offers a peaceful coastal escape surrounded by scenic hiking trails,
+        ocean views, and relaxing accommodations. Guests can enjoy guided nature walks, kayaking,
+        and quiet evenings by the shore. Whether you are seeking adventure or rest, Pacific Trails
+        provides the perfect setting for a memorable getaway.
+      </p>
+
+      <a href="#" class="book-btn">Book Your Stay</a>
+    </section>
+
+    <section>
+      <h2>Resort Activities</h2>
+      <p>
+        Explore nearby coastal trails, enjoy kayaking on the water, or relax and take in the beauty
+        of the natural surroundings. Pacific Trails Resort is perfect for guests who love both adventure
+        and peaceful scenery.
+      </p>
+    </section>
+
+    <section>
+      <h2>Resort Audio Tour</h2>
+      <div class="media-box">
+        <p>
+          Listen to a short audio clip to imagine the calm atmosphere of Pacific Trails Resort.
+        </p>
+
+        <audio controls>
+          <source src="pacific-trails-audio.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <section>
+      <h2>Room Rates</h2>
+      <table>
+        <caption>Pacific Trails Resort room types and nightly rates</caption>
+        <thead>
+          <tr>
+            <th>Room Type</th>
+            <th>Description</th>
+            <th>Nightly Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard Room</td>
+            <td>One queen bed with garden view</td>
+            <td>$149</td>
+          </tr>
+          <tr>
+            <td>Deluxe Room</td>
+            <td>Two queen beds with ocean view</td>
+            <td>$199</td>
+          </tr>
+          <tr>
+            <td>Luxury Suite</td>
+            <td>King bed with private balcony</td>
+            <td>$289</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pacific Trails Resort | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
